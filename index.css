@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292929;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+#chocolate-options {
+    margin-bottom: 20px;
+}
+
+#chocolate-options input[type="checkbox"] {
+    display: none;
+}
+
+#chocolate-options label {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#chocolate-options label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: -30px;
+    top: 2px;
+}
+
+#chocolate-options input[type="checkbox"]:checked + label::before {
+    background-color: #5804b8; /* Color for checked checkbox */
+}
+
+#chocolate-options label::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    transition: background-color 0.3s ease;
+}
+
+#chocolate-options input[type="checkbox"]:checked + label::after {
+    background-color: #fff; /* Color for checked checkbox */
+}
+
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8123ed; /* Color for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #5804b8; /* Color on hover */
+    box-shadow: 0 0 10px rgba(110, 5, 247, 0.5); /* Neon shadow effect */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+

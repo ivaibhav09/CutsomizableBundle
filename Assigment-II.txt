@@ -1,0 +1,10 @@
+                                     Assignment: II
+
+In this assignment the task is  to create responsive corausel for given products in home page section.
+
+>> Starting with creating html boiler plate code further link custom styling to write CSS code, script file to write javascript code.
+>> Here in style i have card like structure in which providing chocolate names and button to add them with beautiful box shadow and hover property.
+>> In javascript code using queryselector to access the element using eventlistener to load our DOM structure after this applying a loop that 
+   whenever any button clicked will ensure to count increment by 1 this will done work until totalclicked become eight. Creating a function
+   to adding there prices.
+>> For responsive design here we have used media queries for max-width: 768px.
